@@ -1,0 +1,88 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.container {
+position:relative;
+margin: 4vh auto;
+width: 80vw;
+height: 90vh;
+background-image:linear-gradient(to right, rgb(238, 114, 13) 10%, rgb(25, 189, 74) 90%);
+box-shadow:yellow 3px 3px 9px 8px;
+border-radius: 10px;
+}
+
+
+.precedente,
+.seguente {
+
+position: absolute;
+top: 40%;
+transform: translate(-50%);
+cursor: pointer;
+}
+.precedente {
+    left: 95%;
+}
+.seguente {
+    right: 90%;
+}
+
+.precedente i, .seguente i {
+font-size: 4rem;
+color: whitesmoke;
+}
+.precedente i:hover, .seguente i:hover {
+    font-size: 4rem;
+    color: lime;
+    }
+.contenitore_foto {
+ position: absolute;
+    width: 72%;
+    height: 70%;
+    margin-left: 50%;
+    transform: translate(-52%);
+    margin-top: 10vh;
+   
+}
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 6px;
+}
+.slider{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 80vh;
+    width: 300px;
+    height: 5vh;
+    
+    margin-left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    background-color: rgba(0,0, 0, 0.4);
+    
+}
+.slider i{
+    line-height: 5vh;
+    margin-right:10px;
+    margin-left: 10px;
+      color: whitesmoke;
+    font-size: 1.2rem;
+    
+}
+.slider i:hover {
+    cursor: pointer;
+    color: yellowgreen;
+    font-size: 1.4rem;
+}
+
